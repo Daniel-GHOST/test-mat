@@ -6,7 +6,7 @@ import { Observable, catchError, retry, throwError } from 'rxjs';
   providedIn: 'root'
 })
 export class DevHoursService {
-  apiURL:string="http://localhost:8080/hours"
+  apiURL:string="https://pruebas-service-daniel-ghost.cloud.okteto.net/hours"
   constructor(private cliente:HttpClient) { }
 
     httpOptions = {

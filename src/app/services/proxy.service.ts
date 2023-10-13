@@ -6,7 +6,7 @@ import { Observable, catchError, retry, throwError } from 'rxjs';
   providedIn: 'root'
 })
 export class ProxyService {
-  apiURL:string="http://localhost:8080/proxy"
+  apiURL:string="https://pruebas-service-daniel-ghost.cloud.okteto.net/proxy"
   constructor(private cliente:HttpClient) { }
 
     httpOptions = {
