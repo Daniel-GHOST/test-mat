@@ -28,9 +28,7 @@ describe('CorrelationComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  ////////////////////////////////////////////
-  ////////// PRUEBAS CON DATA_TEST_1 /////////
-  ////////////////////////////////////////////
+  // PRUEBAS CON DATA_TEST_1
   it('Should return r=0.9545 with the dataset Data_Test1',()=>{
     const calculado={
       "proxy_size":[130, 650, 99, 150, 128, 302, 95, 945, 368, 961],
@@ -51,9 +49,7 @@ describe('CorrelationComponent', () => {
     expect(component.calculateR2()).toBeCloseTo(0.9111, 4);
   })
 
-  ////////////////////////////////////////////
-  ////////// PRUEBAS CON DATA_TEST_2 /////////
-  ////////////////////////////////////////////
+  // PRUEBAS CON DATA_TEST_2
   it('Should return r=0.9333 with the dataset Data_Test2', ()=>{
     const calculado={
       "proxy_size": [130, 650, 99, 150, 128, 302, 95, 945, 368, 961],
@@ -74,9 +70,7 @@ describe('CorrelationComponent', () => {
     expect(component.calculateR2()).toBeCloseTo(0.8711, 4);
   })
 
-  ////////////////////////////////////////////
-  ////////// PRUEBAS CON DATA_TEST_3 /////////
-  ////////////////////////////////////////////
+  // PRUEBAS CON DATA_TEST_3
   it('Should return r=0.9631 with the dataset Data_Test3', ()=>{
     const calculado={
       "plan_added": [163, 765, 141, 166, 137, 355, 136, 1206, 433, 1130],
@@ -97,9 +91,7 @@ describe('CorrelationComponent', () => {
     expect(component.calculateR2()).toBeCloseTo(0.9276, 4);
   })
 
-  ////////////////////////////////////////////
-  ////////// PRUEBAS CON DATA_TEST_4 /////////
-  ////////////////////////////////////////////
+  // PRUEBAS CON DATA_TEST_4
   it('Should return r=0.9480 with the dataset Data_Test4', ()=>{
     const calculado={
       "plan_added": [ 163, 765, 141, 166, 137, 355, 136, 1206, 433, 1130],
