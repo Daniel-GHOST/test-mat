@@ -27,9 +27,7 @@ describe('LinearRegressionComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  ////////////////////////////////////////////
-  ////////// PRUEBAS CON DATA_TEST_1 /////////
-  ////////////////////////////////////////////
+  // PRUEBAS CON DATA_TEST_1
   it('Should return B0=-22.55 with the dataset Data_Test1',()=>{
     const calculado={
       "proxy_size":[130, 650, 99, 150, 128, 302, 95, 945, 368, 961],
@@ -60,9 +58,7 @@ describe('LinearRegressionComponent', () => {
     expect(component.calculateY(386)).toBeCloseTo(644.429, 3);
   })
 
-  ////////////////////////////////////////////
-  ////////// PRUEBAS CON DATA_TEST_2 /////////
-  ////////////////////////////////////////////
+  // PRUEBAS CON DATA_TEST_2
   it('Should return B0=-4.039 with the dataset Data_Test2', ()=>{
     const calculado={
       "proxy_size": [130, 650, 99, 150, 128, 302, 95, 945, 368, 961],
@@ -93,9 +89,7 @@ describe('LinearRegressionComponent', () => {
     expect(component.calculateY(386)).toBeCloseTo(60.858, 3);
   })
 
-  ////////////////////////////////////////////
-  ////////// PRUEBAS CON DATA_TEST_3 /////////
-  ////////////////////////////////////////////
+  // PRUEBAS CON DATA_TEST_3
   it('Should return B0=-23.92 with the dataset Data_Test3', ()=>{
     const calculado={
       "plan_added": [163, 765, 141, 166, 137, 355, 136, 1206, 433, 1130],
@@ -126,9 +120,8 @@ describe('LinearRegressionComponent', () => {
     expect(component.calculateY(386)).toBeCloseTo(528.4294, 4);
   })
 
-  ////////////////////////////////////////////
-  ////////// PRUEBAS CON DATA_TEST_4 /////////
-  ////////////////////////////////////////////
+  // PRUEBAS CON DATA_TEST_4
+
   it('Should return B0=-4.604 with the dataset Data_Test4', ()=>{
     const calculado={
       "plan_added": [ 163, 765, 141, 166, 137, 355, 136, 1206, 433, 1130],
